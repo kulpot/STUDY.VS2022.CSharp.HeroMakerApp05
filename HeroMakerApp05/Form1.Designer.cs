@@ -59,10 +59,12 @@
             this.scroll_speed = new System.Windows.Forms.HScrollBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -378,12 +380,20 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.dateTimePicker1);
             this.groupBox4.Location = new System.Drawing.Point(359, 9);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(429, 226);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(36, 52);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -409,6 +419,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,6 +458,7 @@
         private System.Windows.Forms.Label lbl_stamina;
         private System.Windows.Forms.Label lbl_speed;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
