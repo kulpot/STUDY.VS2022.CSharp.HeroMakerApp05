@@ -60,6 +60,7 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -380,6 +381,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.dateTimePicker1);
             this.groupBox4.Location = new System.Drawing.Point(359, 9);
             this.groupBox4.Name = "groupBox4";
@@ -390,10 +392,19 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 52);
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 46);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Birthday";
             // 
             // Form1
             // 
@@ -420,6 +431,7 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,6 +471,7 @@
         private System.Windows.Forms.Label lbl_speed;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
     }
 }
 
