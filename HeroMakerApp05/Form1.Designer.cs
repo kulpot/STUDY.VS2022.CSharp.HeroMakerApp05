@@ -48,16 +48,17 @@
             this.rdo_landspeeder = new System.Windows.Forms.RadioButton();
             this.rdo_jetpack = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbl_strength = new System.Windows.Forms.Label();
+            this.lbl_stamina = new System.Windows.Forms.Label();
+            this.lbl_speed = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.scroll_strength = new System.Windows.Forms.HScrollBar();
+            this.scroll_stamina = new System.Windows.Forms.HScrollBar();
             this.scroll_speed = new System.Windows.Forms.HScrollBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.scroll_stamina = new System.Windows.Forms.HScrollBar();
-            this.scroll_strength = new System.Windows.Forms.HScrollBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbl_speed = new System.Windows.Forms.Label();
-            this.lbl_stamina = new System.Windows.Forms.Label();
-            this.lbl_strength = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -92,7 +93,7 @@
             this.groupBox1.Controls.Add(this.chk_fly);
             this.groupBox1.Location = new System.Drawing.Point(15, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(297, 126);
+            this.groupBox1.Size = new System.Drawing.Size(326, 126);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Special Abilities";
@@ -290,72 +291,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Speed-Stamina-Strength";
             // 
-            // scroll_speed
+            // lbl_strength
             // 
-            this.scroll_speed.Location = new System.Drawing.Point(7, 43);
-            this.scroll_speed.Name = "scroll_speed";
-            this.scroll_speed.Size = new System.Drawing.Size(300, 15);
-            this.scroll_speed.TabIndex = 0;
-            this.scroll_speed.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_speed_Scroll);
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(456, 113);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 1;
-            // 
-            // scroll_stamina
-            // 
-            this.scroll_stamina.Location = new System.Drawing.Point(7, 79);
-            this.scroll_stamina.Name = "scroll_stamina";
-            this.scroll_stamina.Size = new System.Drawing.Size(300, 15);
-            this.scroll_stamina.TabIndex = 1;
-            this.scroll_stamina.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_stamina_Scroll);
-            // 
-            // scroll_strength
-            // 
-            this.scroll_strength.Location = new System.Drawing.Point(7, 117);
-            this.scroll_strength.Name = "scroll_strength";
-            this.scroll_strength.Size = new System.Drawing.Size(300, 15);
-            this.scroll_strength.TabIndex = 2;
-            this.scroll_strength.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_strength_Scroll);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Speed:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Stamina:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 104);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Strength:";
-            // 
-            // lbl_speed
-            // 
-            this.lbl_speed.AutoSize = true;
-            this.lbl_speed.Location = new System.Drawing.Point(61, 30);
-            this.lbl_speed.Name = "lbl_speed";
-            this.lbl_speed.Size = new System.Drawing.Size(19, 13);
-            this.lbl_speed.TabIndex = 6;
-            this.lbl_speed.Text = "33";
+            this.lbl_strength.AutoSize = true;
+            this.lbl_strength.Location = new System.Drawing.Point(61, 104);
+            this.lbl_strength.Name = "lbl_strength";
+            this.lbl_strength.Size = new System.Drawing.Size(19, 13);
+            this.lbl_strength.TabIndex = 8;
+            this.lbl_strength.Text = "33";
             // 
             // lbl_stamina
             // 
@@ -366,20 +309,88 @@
             this.lbl_stamina.TabIndex = 7;
             this.lbl_stamina.Text = "33";
             // 
-            // lbl_strength
+            // lbl_speed
             // 
-            this.lbl_strength.AutoSize = true;
-            this.lbl_strength.Location = new System.Drawing.Point(61, 104);
-            this.lbl_strength.Name = "lbl_strength";
-            this.lbl_strength.Size = new System.Drawing.Size(19, 13);
-            this.lbl_strength.TabIndex = 8;
-            this.lbl_strength.Text = "33";
+            this.lbl_speed.AutoSize = true;
+            this.lbl_speed.Location = new System.Drawing.Point(61, 30);
+            this.lbl_speed.Name = "lbl_speed";
+            this.lbl_speed.Size = new System.Drawing.Size(19, 13);
+            this.lbl_speed.TabIndex = 6;
+            this.lbl_speed.Text = "33";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 104);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Strength:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Stamina:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Speed:";
+            // 
+            // scroll_strength
+            // 
+            this.scroll_strength.Location = new System.Drawing.Point(7, 117);
+            this.scroll_strength.Name = "scroll_strength";
+            this.scroll_strength.Size = new System.Drawing.Size(300, 15);
+            this.scroll_strength.TabIndex = 2;
+            this.scroll_strength.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_strength_Scroll);
+            // 
+            // scroll_stamina
+            // 
+            this.scroll_stamina.Location = new System.Drawing.Point(7, 79);
+            this.scroll_stamina.Name = "scroll_stamina";
+            this.scroll_stamina.Size = new System.Drawing.Size(300, 15);
+            this.scroll_stamina.TabIndex = 1;
+            this.scroll_stamina.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_stamina_Scroll);
+            // 
+            // scroll_speed
+            // 
+            this.scroll_speed.Location = new System.Drawing.Point(7, 43);
+            this.scroll_speed.Name = "scroll_speed";
+            this.scroll_speed.Size = new System.Drawing.Size(300, 15);
+            this.scroll_speed.TabIndex = 0;
+            this.scroll_speed.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_speed_Scroll);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(491, 252);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 1;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(359, 9);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(429, 226);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "groupBox4";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -435,6 +446,7 @@
         private System.Windows.Forms.Label lbl_strength;
         private System.Windows.Forms.Label lbl_stamina;
         private System.Windows.Forms.Label lbl_speed;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
