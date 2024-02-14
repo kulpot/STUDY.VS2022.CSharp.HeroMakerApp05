@@ -61,6 +61,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -381,6 +382,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.dateTimePicker1);
             this.groupBox4.Location = new System.Drawing.Point(359, 9);
@@ -405,6 +407,15 @@
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Birthday";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Super Power Discovery";
             // 
             // Form1
             // 
@@ -472,6 +483,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
