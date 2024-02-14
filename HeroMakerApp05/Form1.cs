@@ -92,6 +92,7 @@ namespace HeroMaker
             if(speed + stamina + strength > 100)
             {
                 MessageBox.Show("You cannot have more than 100 total points for speed, stamina, strength");
+                Close();
             }
 
             //-------END-------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
