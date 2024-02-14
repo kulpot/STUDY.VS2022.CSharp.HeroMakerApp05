@@ -31,7 +31,7 @@ using System.Windows.Forms;
 //---------------- C# hermaker app 05 How to program a date picker in C# -------------------------------------
 //ref link:https://www.youtube.com/watch?v=mq0lEliFY0E&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=11
 
-// GroupBox, DateTimePicker, Label
+// GroupBox, DateTimePicker x3, Label x3,
 
 namespace HeroMaker
 {
@@ -87,7 +87,6 @@ namespace HeroMaker
             //------END--------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
 
             //-----START---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
-
             int speed = scroll_speed.Value;
             int stamina = scroll_stamina.Value;
             int strength = scroll_strength.Value;
@@ -96,8 +95,15 @@ namespace HeroMaker
                 MessageBox.Show("You cannot have more than 100 total points for speed, stamina, strength");
                 Close();
             }
-
             //-------END-------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
+            //------START-------- C# hermaker app 05 How to program a date picker in C# -------------------------------------
+            // dates
+
+            DateTime birthday = date_birthday.Value;
+            DateTime superPowerDiscovery = date_power_discovery.Value;
+            DateTime fatefulDay = date_fate.Value;
+            //------END-------- C# hermaker app 05 How to program a date picker in C# -------------------------------------
 
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             string status_message = "Your new hero is " + txt_name.Text + "." +
@@ -137,6 +143,12 @@ namespace HeroMaker
             //-----START---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
             status_message += " Speed: " + speed + " Stamina: " + stamina + " Strength: " + strength + ".";
             //-----END---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
+            //------START-------- C# hermaker app 05 How to program a date picker in C# -------------------------------------
+            status_message += " Your hero was born on " + birthday;
+            status_message += " The hero discovered super powers on " + superPowerDiscovery;
+            status_message += " The fateful day for this person is " + fatefulDay;
+            //------END-------- C# hermaker app 05 How to program a date picker in C# -------------------------------------
 
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);

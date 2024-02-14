@@ -59,9 +59,12 @@
             this.scroll_speed = new System.Windows.Forms.HScrollBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.date_birthday = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.date_power_discovery = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.date_fate = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -382,27 +385,30 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.date_fate);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.date_power_discovery);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.dateTimePicker1);
+            this.groupBox4.Controls.Add(this.date_birthday);
             this.groupBox4.Location = new System.Drawing.Point(359, 9);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(429, 226);
+            this.groupBox4.Size = new System.Drawing.Size(252, 165);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
-            // dateTimePicker1
+            // date_birthday
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 46);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.date_birthday.Location = new System.Drawing.Point(18, 39);
+            this.date_birthday.Name = "date_birthday";
+            this.date_birthday.Size = new System.Drawing.Size(200, 20);
+            this.date_birthday.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 23);
+            this.label6.Location = new System.Drawing.Point(15, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 1;
@@ -411,11 +417,34 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 75);
+            this.label7.Location = new System.Drawing.Point(15, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 13);
             this.label7.TabIndex = 2;
             this.label7.Text = "Super Power Discovery";
+            // 
+            // date_power_discovery
+            // 
+            this.date_power_discovery.Location = new System.Drawing.Point(18, 78);
+            this.date_power_discovery.Name = "date_power_discovery";
+            this.date_power_discovery.Size = new System.Drawing.Size(200, 20);
+            this.date_power_discovery.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Fateful Day";
+            // 
+            // date_fate
+            // 
+            this.date_fate.Location = new System.Drawing.Point(18, 115);
+            this.date_fate.Name = "date_fate";
+            this.date_fate.Size = new System.Drawing.Size(200, 20);
+            this.date_fate.TabIndex = 5;
             // 
             // Form1
             // 
@@ -481,9 +510,12 @@
         private System.Windows.Forms.Label lbl_stamina;
         private System.Windows.Forms.Label lbl_speed;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date_birthday;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker date_fate;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker date_power_discovery;
     }
 }
 
